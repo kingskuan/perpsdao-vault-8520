@@ -1,6 +1,8 @@
 import runApp from './lib/core.js';
 
 const port = process.env.PORT || 3000;
+const pacifica = require('./pacifica');
+app.use('/api/pacifica', pacifica);
 
 (async () => {
   try {
