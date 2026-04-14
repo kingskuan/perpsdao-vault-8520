@@ -1,13 +1,15 @@
-// pacifica.js — PerpsDAO Vault x Pacifica Integration
-// Usage: const pacifica = require('./pacifica'); app.use(pacifica);
+// pacifica.js — PerpsDAO Vault x Pacifica Integration (ES Module)
+// Usage in index.js:
+//   import pacifica from './pacifica.js';
+//   app.use('/api/pacifica', pacifica);
 //
 // Adds these endpoints:
-//   GET  /api/pacifica/markets      — live prices + funding from Pacifica
+//   GET  /api/pacifica/markets         — live prices + funding from Pacifica
 //   GET  /api/pacifica/funding/:symbol — funding rate history
-//   GET  /api/pacifica/signal       — vault strategy signal (long/short bias)
-//   POST /api/pacifica/backtest     — simulate vault PnL using real funding data
+//   GET  /api/pacifica/signal          — vault strategy signal (long/short bias)
+//   POST /api/pacifica/backtest        — simulate vault PnL using real funding data
 
-const express = require('express');
+import express from 'express';
 const router = express.Router();
 
 const PACIFICA_API = 'https://api.pacifica.fi';
@@ -251,4 +253,4 @@ router.post('/backtest', async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
