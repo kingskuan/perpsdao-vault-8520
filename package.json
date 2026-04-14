@@ -1,14 +1,17 @@
 {
   "name": "perpsdao-vault",
   "version": "1.0.0",
-  "description": "PerpsDAO Vault — 去中心化永续策略金库",
-  "main": "index.js",
+  "description": "Decentralized Perpetual Strategy Vault powered by Pacifica",
   "type": "module",
+  "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "npm install"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.21.2"
+  },
   "engines": {
-    "node": ">=20"
+    "node": ">=18.0.0"
   }
 }
