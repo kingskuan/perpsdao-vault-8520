@@ -1,0 +1,14 @@
+{
+  "name": "perpsdao-vault",
+  "version": "1.0.0",
+  "description": "PerpsDAO Vault — 去中心化永续策略金库",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=20"
+  }
+}
