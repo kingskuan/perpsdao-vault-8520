@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -24,24 +23,24 @@ a{color:#00ff87;text-decoration:none}
 
 /* ── Scanlines ── */
 body::after{
-content:’’;position:fixed;inset:0;pointer-events:none;z-index:9999;
-background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,255,135,.015) 3px,rgba(0,255,135,.015) 4px);
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;
+  background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,255,135,.015) 3px,rgba(0,255,135,.015) 4px);
 }
 
 /* ── Header ── */
 header{
-display:flex;align-items:center;justify-content:space-between;
-padding:14px 20px;
-background:#0d1117;
-border-bottom:1px solid #1e2830;
-position:sticky;top:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 20px;
+  background:#0d1117;
+  border-bottom:1px solid #1e2830;
+  position:sticky;top:0;z-index:100;
 }
-.logo{font-family:‘Syne’,sans-serif;font-weight:800;font-size:17px;color:#f0f6fc;letter-spacing:-.5px}
+.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:17px;color:#f0f6fc;letter-spacing:-.5px}
 .logo em{color:#00ff87;font-style:normal}
 .badges{display:flex;gap:6px}
 .badge{
-padding:4px 9px;border-radius:4px;font-size:10px;font-weight:700;letter-spacing:.8px;
-display:flex;align-items:center;gap:5px;
+  padding:4px 9px;border-radius:4px;font-size:10px;font-weight:700;letter-spacing:.8px;
+  display:flex;align-items:center;gap:5px;
 }
 .badge-live{background:rgba(0,255,135,.12);color:#00ff87;border:1px solid rgba(0,255,135,.25)}
 .badge-pac{background:rgba(0,212,255,.12);color:#00d4ff;border:1px solid rgba(0,212,255,.25)}
@@ -50,17 +49,17 @@ display:flex;align-items:center;gap:5px;
 
 /* ── Tabs ── */
 .tabs{
-display:flex;overflow-x:auto;scrollbar-width:none;
-background:#0d1117;border-bottom:1px solid #1e2830;
-padding:0 16px;
+  display:flex;overflow-x:auto;scrollbar-width:none;
+  background:#0d1117;border-bottom:1px solid #1e2830;
+  padding:0 16px;
 }
 .tabs::-webkit-scrollbar{display:none}
 .tab{
-padding:12px 16px;font-size:11px;font-weight:700;letter-spacing:1px;
-text-transform:uppercase;color:#4a5568;border-bottom:2px solid transparent;
-cursor:pointer;white-space:nowrap;transition:all .15s;
-background:none;border-left:none;border-right:none;border-top:none;
-font-family:‘Space Mono’,monospace;
+  padding:12px 16px;font-size:11px;font-weight:700;letter-spacing:1px;
+  text-transform:uppercase;color:#4a5568;border-bottom:2px solid transparent;
+  cursor:pointer;white-space:nowrap;transition:all .15s;
+  background:none;border-left:none;border-right:none;border-top:none;
+  font-family:'Space Mono',monospace;
 }
 .tab.active{color:#00ff87;border-bottom-color:#00ff87}
 .tab:hover{color:#c9d1d9}
@@ -71,57 +70,57 @@ font-family:‘Space Mono’,monospace;
 
 /* ── Card ── */
 .card{
-background:#0d1117;border:1px solid #1e2830;border-radius:8px;
-margin-bottom:14px;overflow:hidden;
+  background:#0d1117;border:1px solid #1e2830;border-radius:8px;
+  margin-bottom:14px;overflow:hidden;
 }
 .card-head{
-display:flex;align-items:center;justify-content:space-between;
-padding:11px 14px;border-bottom:1px solid #1e2830;
-background:rgba(255,255,255,.02);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:11px 14px;border-bottom:1px solid #1e2830;
+  background:rgba(255,255,255,.02);
 }
 .card-title{
-font-family:‘Syne’,sans-serif;font-weight:600;font-size:10px;
-text-transform:uppercase;letter-spacing:1.5px;color:#4a5568;
+  font-family:'Syne',sans-serif;font-weight:600;font-size:10px;
+  text-transform:uppercase;letter-spacing:1.5px;color:#4a5568;
 }
 .card-body{padding:14px}
 
 /* ── Refresh button ── */
 .rbtn{
-background:none;border:1px solid #1e2830;color:#4a5568;
-padding:3px 8px;border-radius:3px;font-size:10px;cursor:pointer;
-font-family:‘Space Mono’,monospace;transition:all .15s;
+  background:none;border:1px solid #1e2830;color:#4a5568;
+  padding:3px 8px;border-radius:3px;font-size:10px;cursor:pointer;
+  font-family:'Space Mono',monospace;transition:all .15s;
 }
 .rbtn:hover{border-color:#00ff87;color:#00ff87}
 
 /* ── Market rows ── */
 .mkt{
-display:grid;grid-template-columns:60px 1fr 1fr 1fr;
-align-items:center;padding:10px 0;
-border-bottom:1px solid #1a2028;gap:8px;
+  display:grid;grid-template-columns:60px 1fr 1fr 1fr;
+  align-items:center;padding:10px 0;
+  border-bottom:1px solid #1a2028;gap:8px;
 }
 .mkt:last-child{border:none}
-.mkt-sym{font-family:‘Syne’,sans-serif;font-weight:700;color:#f0f6fc;font-size:12px}
+.mkt-sym{font-family:'Syne',sans-serif;font-weight:700;color:#f0f6fc;font-size:12px}
 .mkt-price{color:#f0f6fc;text-align:right}
 .mkt-fr{text-align:right}
 .mkt-oi{color:#4a5568;font-size:11px;text-align:right}
 .g{color:#00ff87}.r{color:#ff4d6a}.m{color:#4a5568}
 .mkt-head-row{
-display:grid;grid-template-columns:60px 1fr 1fr 1fr;
-padding:0 0 8px;gap:8px;
-font-size:10px;color:#4a5568;text-transform:uppercase;letter-spacing:.8px;
-border-bottom:1px solid #1e2830;margin-bottom:4px;
+  display:grid;grid-template-columns:60px 1fr 1fr 1fr;
+  padding:0 0 8px;gap:8px;
+  font-size:10px;color:#4a5568;text-transform:uppercase;letter-spacing:.8px;
+  border-bottom:1px solid #1e2830;margin-bottom:4px;
 }
 .mkt-head-row span{text-align:right}
 .mkt-head-row span:first-child{text-align:left}
 
 /* ── Signal cards ── */
 .sig{
-display:flex;align-items:center;justify-content:space-between;
-padding:12px;background:rgba(255,255,255,.02);
-border:1px solid #1e2830;border-radius:6px;margin-bottom:8px;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px;background:rgba(255,255,255,.02);
+  border:1px solid #1e2830;border-radius:6px;margin-bottom:8px;
 }
 .sig:last-child{margin-bottom:0}
-.sig-sym{font-family:‘Syne’,sans-serif;font-weight:700;color:#f0f6fc}
+.sig-sym{font-family:'Syne',sans-serif;font-weight:700;color:#f0f6fc}
 .sig-fr{font-size:11px;color:#4a5568;margin-top:2px}
 .chip{padding:4px 10px;border-radius:4px;font-size:10px;font-weight:700;letter-spacing:.5px}
 .chip-s{background:rgba(255,77,106,.15);color:#ff4d6a;border:1px solid rgba(255,77,106,.3)}
@@ -130,45 +129,45 @@ border:1px solid #1e2830;border-radius:6px;margin-bottom:8px;
 
 /* ── Rec banner ── */
 .rec{
-padding:10px 12px;border-radius:6px;font-size:11px;
-margin-bottom:12px;
-background:rgba(0,212,255,.06);border:1px solid rgba(0,212,255,.2);color:#00d4ff;
+  padding:10px 12px;border-radius:6px;font-size:11px;
+  margin-bottom:12px;
+  background:rgba(0,212,255,.06);border:1px solid rgba(0,212,255,.2);color:#00d4ff;
 }
 
 /* ── Backtest grid ── */
 .bt-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .bt-item{
-text-align:center;padding:14px 10px;
-background:rgba(255,255,255,.02);border:1px solid #1e2830;border-radius:6px;
+  text-align:center;padding:14px 10px;
+  background:rgba(255,255,255,.02);border:1px solid #1e2830;border-radius:6px;
 }
-.bt-val{font-family:‘Syne’,sans-serif;font-weight:800;font-size:20px;color:#00ff87}
+.bt-val{font-family:'Syne',sans-serif;font-weight:800;font-size:20px;color:#00ff87}
 .bt-lbl{font-size:10px;color:#4a5568;margin-top:4px;text-transform:uppercase;letter-spacing:.8px}
 
 /* ── Forms ── */
 .row{margin-bottom:12px}
 .lbl{font-size:10px;color:#4a5568;text-transform:uppercase;letter-spacing:.8px;display:block;margin-bottom:5px}
 .inp{
-width:100%;padding:10px 12px;
-background:rgba(255,255,255,.04);border:1px solid #1e2830;
-border-radius:5px;color:#f0f6fc;font-family:‘Space Mono’,monospace;font-size:13px;
-outline:none;transition:border-color .15s;-webkit-appearance:none;
+  width:100%;padding:10px 12px;
+  background:rgba(255,255,255,.04);border:1px solid #1e2830;
+  border-radius:5px;color:#f0f6fc;font-family:'Space Mono',monospace;font-size:13px;
+  outline:none;transition:border-color .15s;-webkit-appearance:none;
 }
 .inp:focus{border-color:#00ff87}
 .sel{
-width:100%;padding:10px 12px;
-background:#0d1117;border:1px solid #1e2830;
-border-radius:5px;color:#f0f6fc;font-family:‘Space Mono’,monospace;font-size:13px;
-outline:none;-webkit-appearance:none;
+  width:100%;padding:10px 12px;
+  background:#0d1117;border:1px solid #1e2830;
+  border-radius:5px;color:#f0f6fc;font-family:'Space Mono',monospace;font-size:13px;
+  outline:none;-webkit-appearance:none;
 }
 .cols2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .cols3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
 
 /* ── Buttons ── */
 .btn{
-width:100%;padding:12px;border:none;border-radius:6px;
-font-family:‘Syne’,sans-serif;font-weight:700;font-size:13px;
-letter-spacing:.3px;cursor:pointer;transition:all .15s;
--webkit-appearance:none;
+  width:100%;padding:12px;border:none;border-radius:6px;
+  font-family:'Syne',sans-serif;font-weight:700;font-size:13px;
+  letter-spacing:.3px;cursor:pointer;transition:all .15s;
+  -webkit-appearance:none;
 }
 .btn-g{background:#00ff87;color:#000}
 .btn-g:hover{background:#00e67a}
@@ -190,9 +189,9 @@ letter-spacing:.3px;cursor:pointer;transition:all .15s;
 .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
 table{width:100%;border-collapse:collapse;min-width:560px}
 th{
-text-align:left;padding:9px 12px;
-font-size:10px;color:#4a5568;text-transform:uppercase;letter-spacing:.8px;
-border-bottom:1px solid #1e2830;font-weight:400;
+  text-align:left;padding:9px 12px;
+  font-size:10px;color:#4a5568;text-transform:uppercase;letter-spacing:.8px;
+  border-bottom:1px solid #1e2830;font-weight:400;
 }
 td{padding:10px 12px;border-bottom:1px solid rgba(30,40,48,.5);font-size:12px}
 tr:last-child td{border:none}
@@ -208,48 +207,48 @@ tr:hover td{background:rgba(255,255,255,.015)}
 
 /* ── Wallet bar ── */
 .wbar{
-display:flex;align-items:center;gap:8px;
-padding:10px 14px;margin-bottom:14px;
-background:rgba(0,255,135,.04);border:1px solid rgba(0,255,135,.15);border-radius:6px;
+  display:flex;align-items:center;gap:8px;
+  padding:10px 14px;margin-bottom:14px;
+  background:rgba(0,255,135,.04);border:1px solid rgba(0,255,135,.15);border-radius:6px;
 }
 .wbar label{font-size:10px;color:#00ff87;white-space:nowrap;letter-spacing:.5px}
 .wbar input{
-flex:1;padding:6px 8px;background:rgba(255,255,255,.04);
-border:1px solid #1e2830;border-radius:4px;color:#f0f6fc;
-font-family:‘Space Mono’,monospace;font-size:11px;outline:none;
+  flex:1;padding:6px 8px;background:rgba(255,255,255,.04);
+  border:1px solid #1e2830;border-radius:4px;color:#f0f6fc;
+  font-family:'Space Mono',monospace;font-size:11px;outline:none;
 }
 .wbar input:focus{border-color:#00ff87}
 
 /* ── Funding history ── */
 .fh-row{
-display:flex;justify-content:space-between;align-items:center;
-padding:5px 0;border-bottom:1px solid #1a2028;font-size:11px;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:5px 0;border-bottom:1px solid #1a2028;font-size:11px;
 }
 .fh-row:last-child{border:none}
 
 /* ── Shimmer ── */
 .shim{
-background:linear-gradient(90deg,#1e2830 25%,rgba(255,255,255,.04) 50%,#1e2830 75%);
-background-size:200% 100%;animation:shim 1.5s infinite;
-border-radius:4px;height:14px;margin:6px 0;
+  background:linear-gradient(90deg,#1e2830 25%,rgba(255,255,255,.04) 50%,#1e2830 75%);
+  background-size:200% 100%;animation:shim 1.5s infinite;
+  border-radius:4px;height:14px;margin:6px 0;
 }
 @keyframes shim{0%{background-position:200% 0}100%{background-position:-200% 0}}
 
 /* ── Stats row ── */
 .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
 .stat-box{
-padding:14px;background:#0d1117;border:1px solid #1e2830;border-radius:8px;text-align:center;
+  padding:14px;background:#0d1117;border:1px solid #1e2830;border-radius:8px;text-align:center;
 }
-.stat-n{font-family:‘Syne’,sans-serif;font-weight:800;font-size:24px}
+.stat-n{font-family:'Syne',sans-serif;font-weight:800;font-size:24px}
 .stat-l{font-size:10px;color:#4a5568;margin-top:4px;text-transform:uppercase;letter-spacing:.8px}
 
 /* ── Toast ── */
 #toast{
-position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(80px);
-padding:11px 20px;background:#0d1117;border:1px solid #00ff87;
-border-radius:20px;color:#00ff87;font-size:12px;z-index:9999;
-opacity:0;transition:all .25s ease;white-space:nowrap;
-max-width:90vw;text-align:center;
+  position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(80px);
+  padding:11px 20px;background:#0d1117;border:1px solid #00ff87;
+  border-radius:20px;color:#00ff87;font-size:12px;z-index:9999;
+  opacity:0;transition:all .25s ease;white-space:nowrap;
+  max-width:90vw;text-align:center;
 }
 #toast.show{transform:translateX(-50%) translateY(0);opacity:1}
 #toast.err{border-color:#ff4d6a;color:#ff4d6a}
@@ -260,13 +259,12 @@ max-width:90vw;text-align:center;
 /* ── Funding sym selector ── */
 .sym-tabs{display:flex;gap:6px;margin-bottom:12px}
 .sym-tab{
-padding:5px 12px;border-radius:4px;font-size:11px;cursor:pointer;
-background:rgba(255,255,255,.03);border:1px solid #1e2830;color:#4a5568;
-font-family:‘Space Mono’,monospace;transition:all .15s;
+  padding:5px 12px;border-radius:4px;font-size:11px;cursor:pointer;
+  background:rgba(255,255,255,.03);border:1px solid #1e2830;color:#4a5568;
+  font-family:'Space Mono',monospace;transition:all .15s;
 }
 .sym-tab.active{background:rgba(0,255,135,.1);border-color:rgba(0,255,135,.3);color:#00ff87}
 </style>
-
 </head>
 <body>
 
@@ -279,7 +277,6 @@ font-family:‘Space Mono’,monospace;transition:all .15s;
 </header>
 
 <!-- Tabs -->
-
 <div class="tabs">
   <button class="tab active" onclick="switchTab('markets')">Markets</button>
   <button class="tab" onclick="switchTab('signal')">Signal</button>
@@ -289,7 +286,6 @@ font-family:‘Space Mono’,monospace;transition:all .15s;
 </div>
 
 <!-- PAGE: Markets -->
-
 <div class="page active" id="page-markets">
   <div class="stats-row">
     <div class="stat-box"><div class="stat-n g" id="s-markets">—</div><div class="stat-l">Markets</div></div>
@@ -327,7 +323,6 @@ font-family:‘Space Mono’,monospace;transition:all .15s;
 </div>
 
 <!-- PAGE: Signal -->
-
 <div class="page" id="page-signal">
   <div class="card">
     <div class="card-head">
@@ -355,7 +350,6 @@ font-family:‘Space Mono’,monospace;transition:all .15s;
 </div>
 
 <!-- PAGE: Vault -->
-
 <div class="page" id="page-vault">
   <!-- Wallet -->
   <div class="wbar">
@@ -407,7 +401,6 @@ font-family:‘Space Mono’,monospace;transition:all .15s;
 </div>
 
 <!-- PAGE: Trade -->
-
 <div class="page" id="page-trade">
   <div class="card">
     <div class="card-head"><span class="card-title">Open Position</span></div>
@@ -445,7 +438,6 @@ font-family:‘Space Mono’,monospace;transition:all .15s;
 </div>
 
 <!-- PAGE: Governance -->
-
 <div class="page" id="page-gov">
   <div class="card">
     <div class="card-head"><span class="card-title">Create Proposal</span></div>
@@ -509,15 +501,21 @@ async function loadMarkets(){
     const list=d.markets||[];
     document.getElementById('s-markets').textContent=list.length;
     el.innerHTML=list.slice(0,12).map(m=>{
-      const pos=m.fundingRate>0.0001,neg=m.fundingRate<-0.0001;
-      const fc=pos?'g':neg?'r':'m';
-      const sign=m.fundingRate>=0?'+':'';
-      const oi=m.openInterest>1e9?`$${(m.openInterest/1e9).toFixed(1)}B`:`$${(m.openInterest/1e6).toFixed(0)}M`;
-      const p=m.markPrice>1000?fmt(m.markPrice,0):`$${fmt(m.markPrice,4)}`;
+      // Funding — guard against null/NaN from API
+      const apr = (m.fundingAnnualizedPct != null && !isNaN(m.fundingAnnualizedPct)) ? m.fundingAnnualizedPct : 0;
+      const fc  = apr > 0.01 ? 'g' : apr < -0.01 ? 'r' : 'm';
+      const fundStr = `${apr >= 0 ? '+' : ''}${fmt(apr, 2)}%`;
+      // OI — handle 0, K, M, B
+      const oiVal = m.openInterest || 0;
+      const oi = oiVal >= 1e9 ? `$${(oiVal/1e9).toFixed(1)}B`
+               : oiVal >= 1e6 ? `$${(oiVal/1e6).toFixed(1)}M`
+               : oiVal >= 1e3 ? `$${(oiVal/1e3).toFixed(0)}K`
+               : oiVal > 0    ? `$${oiVal.toFixed(0)}`
+               : '—';
       return `<div class="mkt">
         <span class="mkt-sym">${m.symbol}</span>
         <span class="mkt-price">$${m.markPrice>100?fmt(m.markPrice,0):fmt(m.markPrice,3)}</span>
-        <span class="mkt-fr ${fc}">${sign}${fmt(m.fundingAnnualizedPct,2)}%</span>
+        <span class="mkt-fr ${fc}">${fundStr}</span>
         <span class="mkt-oi">${oi}</span>
       </div>`;
     }).join('');
@@ -727,6 +725,5 @@ loadMarkets();
 loadFunding();
 setInterval(loadMarkets,30000);
 </script>
-
 </body>
 </html>
